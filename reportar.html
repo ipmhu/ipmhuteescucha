@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar | IPMHU Te Escucha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --azul-politecnico: #003366;
+            --dorado-acento: #D4AF37;
+        }
+        body { font-family: 'Poppins', sans-serif; background-color: #f4f7f9; }
+        
+        /* Navegación */
+        .navbar { background-color: var(--azul-politecnico) !important; }
+        .logo-img { height: 45px; width: 45px; border-radius: 50%; object-fit: cover; border: 2px solid var(--dorado-acento); margin-right: 10px; }
+
+        /* Estilos del Formulario */
+        .header-reportar {
+            background-color: var(--azul-politecnico);
+            color: white;
+            padding: 80px 0 100px 0;
+            text-align: center;
+        }
+
+        .form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            margin-top: -60px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .btn-enviar {
+            background-color: var(--azul-politecnico);
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+
+        .btn-enviar:hover {
+            background-color: #002244;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .aviso-confidencial {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Botón Instagram Flotante */
+        .float-ig { position: fixed; bottom: 30px; right: 30px; background: linear-gradient(45deg, #f09433, #bc1888); color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="IPMHUTeEscucha_LOGO (1).jpg" class="logo-img">
+                <span>IPMHU Te Escucha</span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Quiénes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="reportar.html">Reportar/Denunciar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header-reportar">
+        <div class="container">
+            <h1 class="display-5 fw-bold">Portal de Reportes</h1>
+            <p class="lead">Tu voz es confidencial. Ayúdanos a identificar y resolver los problemas del centro.</p>
+        </div>
+    </header>
+
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <div class="form-container">
+                    
+                    <script type="text/javascript">var submitted=false;</script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#'; mostrarExito();}"></iframe>
+                    
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfg7MS8PvEwlXFJ8dt4jp1TRMmIA0XVyWjDo9eQXDWXzpi3pA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                        
+                        <div class="mb-4">
+                            <label class="form-label fw-bold"><i class="fas fa-list-ul me-2"></i>1. ¿Qué tipo de situación quieres reportar?</label>
+                            <select class="form-select" name="entry.1691238910" required>
+                                <option value="" selected disabled>Selecciona una categoría...</option>
+                                <option value="Infraestructura">Infraestructura (Baños, aulas, áreas comunes)</option>
+                                <option value="Académico">Asuntos Académicos (Clases, horarios, talleres)</option>
+                                <option value="Bienestar Estudiantil">Bienestar Estudiantil (Convivencia, cafetería)</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label fw-bold"><i class="fas fa-pen me-2"></i>2. Descripción detallada</label>
+                            <textarea class="form-control" name="entry.1706240294" rows="5" placeholder="Explica detalladamente qué sucede..." required></textarea>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label fw-bold"><i class="fas fa-lightbulb me-2"></i>3. ¿Qué solución propones?</label>
+                            <textarea class="form-control" name="entry.1982705973" rows="3" placeholder="Si tienes una idea para resolverlo, escríbela aquí..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-enviar w-100">Enviar Reporte al Comité</button>
+
+                        <div id="mensajeConfirmacion" class="mt-4 alert alert-success text-center" style="display:none;">
+                            <i class="fas fa-check-circle me-2"></i> ¡Gracias! Tu reporte ha sido enviado con éxito al comité.
+                        </div>
+
+                        <div class="aviso-confidencial">
+                            <i class="fas fa-shield-alt text-success me-1"></i>
+                            Este sistema garantiza que tu reporte sea recibido de forma privada por el Comité Estudiantil y el Departamento de Orientación.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://instagram.com/ipmhuteescucha" class="float-ig" target="_blank">
+        <i class="fab fa-instagram me-2"></i> @ipmhuteescucha
+    </a>
+
+    <script>
+        function mostrarExito() {
+            document.getElementById('mensajeConfirmacion').style.display = 'block';
+            document.querySelector('form').reset();
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

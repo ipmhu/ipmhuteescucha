@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | IPMHU Te Escucha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --azul-politecnico: #003366;
+            --dorado-acento: #D4AF37;
+        }
+
+        body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; }
+
+        /* Navegación */
+        .navbar { background-color: var(--azul-politecnico) !important; }
+        .logo-img { height: 45px; width: 45px; border-radius: 50%; object-fit: cover; border: 2px solid var(--dorado-acento); margin-right: 10px; }
+
+        /* Sección Nosotros */
+        .section-nosotros { padding: 60px 0; text-align: center; }
+        .titulo-hola { font-weight: 700; color: var(--azul-politecnico); margin-bottom: 30px; }
+
+        /* Estilo del Carrusel */
+        #carouselComite { max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        
+        .foto-comite {
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .nombre-miembro { font-weight: 700; font-size: 1.5rem; margin-bottom: 5px; color: #333; }
+        .cargo-miembro { font-style: italic; font-weight: 400; color: var(--azul-politecnico); font-size: 1.2rem; }
+
+        /* Flechas del carrusel personalizadas */
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            background-color: var(--azul-politecnico);
+            border-radius: 50%;
+            padding: 20px;
+        }
+
+        /* Botón Instagram Flotante */
+        .float-ig { position: fixed; bottom: 30px; right: 30px; background: linear-gradient(45deg, #f09433, #bc1888); color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="IPMHUTeEscucha_LOGO (1).jpg" class="logo-img">
+                <span>IPMHU Te Escucha</span>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="nosotros.html">Quiénes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reportar.html">Reportar/Denunciar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section-nosotros container">
+        <h1 class="titulo-hola">¡HOLA!</h1>
+        <p class="lead mb-5">Somos tu consejo estudiantil 2025 - 2026 del Instituto Politécnico Max Henríquez Ureña conformado por:</p>
+
+        <div id="carouselComite" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <img src="file:///C:/Users/robel/OneDrive%20-%20Ministerio%20de%20Educaci%C3%B3n%20de%20la%20Rep%C3%BAblica%20Dominicana/Escritorio/Comite%20FOTOS/20260102_040235206_iOS.png" class="foto-comite" alt="Presidente">
+                    <p class="nombre-miembro">Enmanuel Paniagua</p>
+                    <p class="cargo-miembro">Presidente</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="file:///C:/Users/robel/OneDrive%20-%20Ministerio%20de%20Educaci%C3%B3n%20de%20la%20Rep%C3%BAblica%20Dominicana/Escritorio/Comite%20FOTOS/2.png" class="foto-comite" alt="Vice">
+                    <p class="nombre-miembro">Jazmin Duran</p>
+                    <p class="cargo-miembro">Vice-Presidenta</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="file:///C:/Users/robel/OneDrive%20-%20Ministerio%20de%20Educaci%C3%B3n%20de%20la%20Rep%C3%BAblica%20Dominicana/Escritorio/Comite%20FOTOS/3.png" class="foto-comite" alt="Secretaria">
+                    <p class="nombre-miembro">Milagros Familia</p>
+                    <p class="cargo-miembro">Secretaria</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="file:///C:/Users/robel/OneDrive%20-%20Ministerio%20de%20Educaci%C3%B3n%20de%20la%20Rep%C3%BAblica%20Dominicana/Escritorio/Comite%20FOTOS/robe.png" class="foto-comite" alt="Relaciones Públicas">
+                    <p class="nombre-miembro">Robelin Mejias</p>
+                    <p class="cargo-miembro">Enc. Relaciones Públicas</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="file:///C:/Users/robel/OneDrive%20-%20Ministerio%20de%20Educaci%C3%B3n%20de%20la%20Rep%C3%BAblica%20Dominicana/Escritorio/Comite%20FOTOS/1.png" class="foto-comite" alt="Tesorera">
+                    <p class="nombre-miembro">Jennyfer López</p>
+                    <p class="cargo-miembro">Tesorera</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="file:///C:/Users/robel/OneDrive%20-%20Ministerio%20de%20Educaci%C3%B3n%20de%20la%20Rep%C3%BAblica%20Dominicana/Escritorio/Comite%20FOTOS/Copia%20de%20IPMHUTeEscucha_LOGO.png" class="foto-comite" alt="Deporte">
+                    <p class="nombre-miembro">Ismael Acevedo</p>
+                    <p class="cargo-miembro">Enc. Deporte</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="file:///C:/Users/robel/OneDrive%20-%20Ministerio%20de%20Educaci%C3%B3n%20de%20la%20Rep%C3%BAblica%20Dominicana/Escritorio/Comite%20FOTOS/5.png" class="foto-comite" alt="Vocal I">
+                    <p class="nombre-miembro">Darlyng Mateo</p>
+                    <p class="cargo-miembro">Vocal I</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="file:///C:/Users/robel/OneDrive%20-%20Ministerio%20de%20Educaci%C3%B3n%20de%20la%20Rep%C3%BAblica%20Dominicana/Escritorio/Comite%20FOTOS/4.png" class="foto-comite" alt="Vocal II">
+                    <p class="nombre-miembro">Esteverling Batista</p>
+                    <p class="cargo-miembro">Vocal II</p>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselComite" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselComite" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+                <div class="p-4 shadow-sm bg-white rounded-4 border-start border-primary border-5">
+                    <p class="fs-5 text-secondary leading-relaxed">
+                        <strong class="text-dark">IPMHU Te Escucha</strong> fue creado para cumplir de manera más efectiva el objetivo principal de nuestro Comité Estudiantil: ser el puente directo entre el alumnado y la gestión institucional. Nuestra prioridad es escuchar las voces de cada estudiante del <strong>Instituto Politécnico Max Henríquez Ureña</strong>, trabajando en equipo para identificar desafíos y proponer soluciones sólidas, viables y transformadoras.
+                    </p>
+                    <hr class="my-4 mx-auto w-25">
+                    <p class="fs-6 text-muted">
+                        Este proyecto no camina solo; es una iniciativa que cuenta con el <strong>respaldo absoluto de la Dirección del Centro</strong> y el acompañamiento constante del <strong>Departamento de Orientación y Psicología</strong>. Juntos, garantizamos que cada reporte sea tratado con la importancia, profesionalidad y confidencialidad que nuestra comunidad educativa merece.
+                    </p>
+                    <div class="mt-4">
+                        <span class="badge bg-primary px-3 py-2">Escucha Activa</span>
+                        <span class="badge bg-primary px-3 py-2">Gestión Transparente</span>
+                        <span class="badge bg-primary px-3 py-2">Unión Estudiantil</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://instagram.com/ipmhuteescucha" class="float-ig" target="_blank">
+        <i class="fab fa-instagram me-2"></i> @ipmhuteescucha
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
