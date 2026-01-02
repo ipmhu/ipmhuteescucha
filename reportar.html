@@ -99,56 +99,43 @@
                     <script type="text/javascript">var submitted=false;</script>
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#'; mostrarExito();}"></iframe>
                     
-                   <form action="https://docs.google.com/forms/d/e/1FAIpQLSfg7MS8PvEwlXFJ8dt4jp1TRMmIA0XVyWjDo9eQXDWXzpi3pA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+<form action="https://docs.google.com/forms/d/e/1FAIpQLSfg7MS8PvEwlXFJ8dt4jp1TRMmIA0XVyWjDo9eQXDWXzpi3pA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
     
     <div class="mb-4">
         <label class="form-label fw-bold">1. ¿Qué tipo de situación quieres reportar?</label>
-        <select class="form-select" name="entry.1691238910" required>
+        <select class="form-select" name="entry.509042634" required>
             <option value="" selected disabled>Selecciona una categoría...</option>
             <option value="Infraestructura">Infraestructura</option>
             <option value="Académico">Académico</option>
-            <option value="Bienestar Estudiantil">Bienestar Estudiantil</option>
+            <option value="Bienestar">Bienestar</option>
             <option value="Otros">Otros</option>
         </select>
     </div>
 
     <div class="mb-4">
         <label class="form-label fw-bold">2. Descripción detallada</label>
-        <textarea class="form-control" name="entry.1706240294" rows="5" required></textarea>
+        <textarea class="form-control" name="entry.4383191" rows="5" required placeholder="Explica detalladamente qué sucede..."></textarea>
     </div>
 
     <div class="mb-4">
         <label class="form-label fw-bold">3. ¿Qué solución propones?</label>
-        <textarea class="form-control" name="entry.1982705973" rows="3"></textarea>
+        <textarea class="form-control" name="entry.536703088" rows="3" placeholder="Si tienes una idea para resolverlo..."></textarea>
     </div>
 
     <button type="submit" class="btn-enviar w-100">Enviar Reporte al Comité</button>
-</form>
-                    
-<div id="mensajeConfirmacion" class="mt-4 alert alert-success text-center" style="display:none;">
-    <i class="fas fa-check-circle me-2"></i> ¡Gracias! Tu reporte ha sido enviado con éxito al comité.
-</div>
-                    
-                </div>
-            </div>
-        </div>
+
+    <div id="mensajeConfirmacion" class="mt-4 alert alert-success text-center" style="display:none;">
+        <i class="fas fa-check-circle me-2"></i> ¡Gracias! Tu reporte ha sido enviado con éxito al comité.
     </div>
+</form>
 
-    <a href="https://instagram.com/ipmhuteescucha" class="float-ig" target="_blank">
-        <i class="fab fa-instagram me-2"></i> @ipmhuteescucha
-    </a>
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {mostrarExito();}"></iframe>
 
-    <script>
+<script>
     function mostrarExito() {
-        var mensaje = document.getElementById('mensajeConfirmacion');
-        if (mensaje) {
-            mensaje.style.display = 'block';
-        }
-        
-        var formulario = document.querySelector('form');
-        if (formulario) {
-            formulario.reset();
-        }
+        document.getElementById('mensajeConfirmacion').style.display = 'block';
+        document.querySelector('form').reset();
     }
 </script>
 
@@ -156,5 +143,6 @@
 </body>
 
 </html>
+
 
 
