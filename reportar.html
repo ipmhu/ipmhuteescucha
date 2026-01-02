@@ -99,40 +99,31 @@
                     <script type="text/javascript">var submitted=false;</script>
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#'; mostrarExito();}"></iframe>
                     
-                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSfg7MS8PvEwlXFJ8dt4jp1TRMmIA0XVyWjDo9eQXDWXzpi3pA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
-                        
-                        <div class="mb-4">
-                            <label class="form-label fw-bold"><i class="fas fa-list-ul me-2"></i>1. ¿Qué tipo de situación quieres reportar?</label>
-                            <select class="form-select" name="entry.1691238910" required>
-                                <option value="" selected disabled>Selecciona una categoría...</option>
-                                <option value="Infraestructura">Infraestructura (Baños, aulas, áreas comunes)</option>
-                                <option value="Académico">Asuntos Académicos (Clases, horarios, talleres)</option>
-                                <option value="Bienestar Estudiantil">Bienestar Estudiantil (Convivencia, cafetería)</option>
-                                <option value="Otros">Otros</option>
-                            </select>
-                        </div>
+                   <form action="https://docs.google.com/forms/d/e/1FAIpQLSfg7MS8PvEwlXFJ8dt4jp1TRMmIA0XVyWjDo9eQXDWXzpi3pA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+    
+    <div class="mb-4">
+        <label class="form-label fw-bold">1. ¿Qué tipo de situación quieres reportar?</label>
+        <select class="form-select" name="entry.1691238910" required>
+            <option value="" selected disabled>Selecciona una categoría...</option>
+            <option value="Infraestructura">Infraestructura</option>
+            <option value="Académico">Académico</option>
+            <option value="Bienestar Estudiantil">Bienestar Estudiantil</option>
+            <option value="Otros">Otros</option>
+        </select>
+    </div>
 
-                        <div class="mb-4">
-                            <label class="form-label fw-bold"><i class="fas fa-pen me-2"></i>2. Descripción detallada</label>
-                            <textarea class="form-control" name="entry.1706240294" rows="5" placeholder="Explica detalladamente qué sucede..." required></textarea>
-                        </div>
+    <div class="mb-4">
+        <label class="form-label fw-bold">2. Descripción detallada</label>
+        <textarea class="form-control" name="entry.1706240294" rows="5" required></textarea>
+    </div>
 
-                        <div class="mb-4">
-                            <label class="form-label fw-bold"><i class="fas fa-lightbulb me-2"></i>3. ¿Qué solución propones?</label>
-                            <textarea class="form-control" name="entry.1982705973" rows="3" placeholder="Si tienes una idea para resolverlo, escríbela aquí..."></textarea>
-                        </div>
+    <div class="mb-4">
+        <label class="form-label fw-bold">3. ¿Qué solución propones?</label>
+        <textarea class="form-control" name="entry.1982705973" rows="3"></textarea>
+    </div>
 
-                        <button type="submit" class="btn-enviar w-100">Enviar Reporte al Comité</button>
-
-                        <div id="mensajeConfirmacion" class="mt-4 alert alert-success text-center" style="display:none;">
-                            <i class="fas fa-check-circle me-2"></i> ¡Gracias! Tu reporte ha sido enviado con éxito al comité.
-                        </div>
-
-                        <div class="aviso-confidencial">
-                            <i class="fas fa-shield-alt text-success me-1"></i>
-                            Este sistema garantiza que tu reporte sea recibido de forma privada por el Comité Estudiantil y el Departamento de Orientación.
-                        </div>
-                    </form>
+    <button type="submit" class="btn-enviar w-100">Enviar Reporte al Comité</button>
+</form>
                 </div>
             </div>
         </div>
@@ -151,4 +142,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
